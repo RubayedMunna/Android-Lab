@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Hotel_Information_System</string>
+    <string name="show_hotels">Show Hotels</string>
+    <string name="hotels">No hotel is selected</string>
+    <string name="select_destination">Select a Tourist Destination</string>
+    <string name="hotel_list">Available Hotels</string>
+
+    <string-array name="destinations">
+        <item>New York</item>
+        <item>Paris</item>
+        <item>Tokyo</item>
+        <item>Dubai</item>
+    </string-array>
 </resources>
