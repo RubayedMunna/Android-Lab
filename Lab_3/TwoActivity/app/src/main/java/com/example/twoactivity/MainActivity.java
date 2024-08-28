@@ -3,6 +3,7 @@ package com.example.twoactivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,7 +26,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSendMessage(View view) {
+        EditText messageView = (EditText) findViewById(R.id.message);
+        String messageText = messageView.getText().toString();
+
+
         Intent intent = new Intent(this, SecondActivity.class);
+        intent.putExtra("message", messageText);
+
         startActivity(intent);
     }
 }
