@@ -10,8 +10,6 @@
 
     tools:context=".MainActivity">
 
-
-
         <EditText
             android:id="@+id/message"
             android:layout_width="wrap_content"
@@ -21,8 +19,6 @@
             android:hint="@string/hint"
             android:ems="10" />
 
-
-
         <Button
             android:id="@+id/send"
             android:layout_width="wrap_content"
@@ -31,4 +27,72 @@
             android:onClick="onSendMessage"
             android:layout_gravity="center"
             android:text="@string/send" />
+
+
+        <TextView
+            android:id="@+id/destination_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_destination"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="40dp"/>
+
+        <Spinner
+            android:id="@+id/destination_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_margin="16dp"
+            android:entries="@array/destinations"/>
+
+        <Button
+            android:id="@+id/show_hotels_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_hotels"
+            android:layout_marginTop="16dp"
+            android:onClick="onClickFindHotel"/>
+
+        <TextView
+            android:id="@+id/hotel_info_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hotel_list"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="16dp"/>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                        <TextView
+                            android:id="@+id/hotel_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotels"
+                            android:textSize="16sp"
+                            android:padding="16dp"
+                            android:textColor="@android:color/black"
+                            android:lineSpacingExtra="4dp"
+                            android:background="@drawable/textview_background" />
+                </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+
 </LinearLayout>
