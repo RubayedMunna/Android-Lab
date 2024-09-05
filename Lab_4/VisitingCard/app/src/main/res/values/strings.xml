@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Visiting Card</string>
+    <string name="session">Session: 2019-2020</string>
+    <string name="reg_no">Registration No: 20200650740</string>
+    <string name="hall">Hall: Mir Mosharraf Hossain Hall</string>
+    <string name="blood_group">Blood Group: O (+ve)</string>
+    <string name="email">jucse29.370@gmail.com</string>
+    <string name="phone">+8801864852588</string>
+    <string name="facebook">https://m.me/rubayed.munna</string>
+    <string name="whatsapp">+8801864852588</string>
+    <string name="linkedin">https://www.linkedin.com/in/rubayed-all-islam-1683841b4/</string>
+    <string name="github">https://github.com/RubayedMunna</string>
+
+</resources>

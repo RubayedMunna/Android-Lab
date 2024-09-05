@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="250dp"
+    android:layout_marginBottom="330dp"
+    android:background="@color/cardview_shadow_start_color"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/rubayedimage" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rubayed All Islam"
+                android:layout_weight="1"
+
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department: Computer Science and Engineering"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/session"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reg_no"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hall"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_group"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+        <!-- Email Icon -->
+        <ImageButton
+            android:id="@+id/email_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_email"
+            android:contentDescription="@string/email"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="16dp"
+            android:onClick="sendEmail"/>
+
+        <!-- Phone Icon -->
+        <ImageButton
+            android:id="@+id/phone_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_phone"
+            android:contentDescription="@string/phone"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="16dp"
+            android:onClick="dialPhone"/>
+
+        <!-- Facebook Icon -->
+        <ImageButton
+            android:id="@+id/facebook_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_facebook"
+            android:contentDescription="@string/facebook"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="16dp"
+            android:onClick="sendMessenger"/>
+
+        <!-- WhatsApp Icon -->
+        <ImageButton
+            android:id="@+id/whatsapp_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_whatsapp"
+            android:contentDescription="@string/whatsapp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="16dp"
+            android:onClick="sendMessageWhatsapp"/>
+
+        <!-- LinkedIn Icon -->
+        <ImageButton
+            android:id="@+id/linkedin_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_linkedin"
+            android:contentDescription="@string/linkedin"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="16dp"
+            android:onClick="viewLinkedIn"/>
+
+        <!-- GitHub Icon -->
+        <ImageButton
+            android:id="@+id/github_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_github"
+            android:contentDescription="@string/github"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="16dp"
+            android:onClick="viewGithub"/>
+    </LinearLayout>
+
+</LinearLayout>
