@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Beautified Label for Bill Amount -->
+    <TextView
+        android:id="@+id/billAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Amount"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:layout_below="@id/appTitle"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/billAmountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bill_amount"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/billAmountLabel" />
+
+    <!-- Beautified Label for Discount -->
+    <TextView
+        android:id="@+id/discountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount Amount (%)"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:layout_below="@id/billAmountInput"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/discountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discountLabel"
+        android:hint="@string/discount_amount"
+        android:inputType="numberDecimal" />
+
+    <!-- Beautified Label for Money Given -->
+    <TextView
+        android:id="@+id/moneyGivenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Money Given"
+        android:textSize="16sp"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:layout_below="@id/discountInput"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/moneyGivenInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moneyGivenLabel"
+        android:hint="@string/given_money"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moneyGivenInput"
+        android:text="@string/cash_back" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:text="Clear Fields"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clearButton"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

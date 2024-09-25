@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChangeCalculator</string>
+    <string name="app">Change Calculator</string>
+    <string name="bill_amount">Enter Bill Amount</string>
+    <string name="discount_amount">Enter Discount Amount (%)</string>
+    <string name="given_money">Enter Money Given</string>
+    <string name="cash_back">Calculate Cash Back</string>
+</resources>
